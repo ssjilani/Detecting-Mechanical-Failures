@@ -13,26 +13,28 @@
             <img src="audio_gif.gif" alt="MVP Image" class="mvp-image">
             <div class="mvp-text">
                 <h3>Streaming Audio Generation</h3>
-                <p>Continuous audio is collected from the machine of interest using a microphone from which a 10-second segment of audio is extracted. This segment is crucial as it allows our model to process and analyze manageable chunks of data continuously with very little delay between when the audio was generated and when our model classified the machinery's health status, thus providing users with almost real-time detection. </p>
+                <p>Continuous audio is collected from the machine of interest using a microphone from which a 10-second segment of audio is extracted. This segment is crucial as it allows our trained model to process and analyze manageable chunks of data continuously with very little delay between when the audio is generated and when our model classifies the machinery's health status, thus providing users with almost real-time detection. </p>
             </div>
             <div class="mvp-image-row">
-                <img src="normal.png" alt="Normal Image" class="mvp-image">
-                <img src="abnormal.png" alt="Abnormal Image" class="mvp-image">
+                <img src="mel_transform.png" class="mel-image">
             </div>
             <div class="mvp-text">
                 <h3>Audio Processing</h3>
-                <p>The extracted audio data is then converted into a mel spectrogram using a signal-processing technique, fourier transform, which represents audio within the frequency domain and provides a visual representation of the spectrum of frequencies in a sound signal as it varies with time. The spectrograms generated provide visual queues, patterns, and characteristics that can be interpreted by the human eye, making it particularly effective for audio analysis. Additionally, these characteristics can be leveraged by advanced image processing techniques to analyze complex audio signals.</p>
+                <p>The extracted audio data is then converted into a mel spectrogram using a signal-processing technique, fourier transform, which represents audio within the frequency domain and provides a visual representation of the spectrum of frequencies in a sound signal as it varies with time. The spectrograms generated provides visual queues, patterns, and characteristics that can be interpreted by the human eye, and making it particularly effective for audio analysis. Additionally, these characteristics can be leveraged by advanced image processing techniques to analyze complex audio signals.</p>
+            </div>
+            <div class="mvp-image-row">
+                <img src="model_training.png" class="mel-image">
             </div>
             <div class="mvp-text">
                 <h3>Classification</h3>
                 <p>The mel spectrogram is fed into our YOLOv8 (You Only Look Once) model. This is a state-of-the-art model for image classification and object detection which was initially pre-trained on millions of images from the ImageNet dataset. It processes the mel spectrogram generated from our 10-second audio segments and classifies them based on learned patterns and features. By leveraging YOLOv8, our model can accurately identify and classify different types of audio events, providing reliable real-time analysis and detection capabilities.</p>
             </div>
             <div class="mvp-image-row">
-                <img src="text_notification.png" alt="Normal Image" class="mvp-image">
+                <img src="text_notification.png" class="notif-image">
             </div>
             <div class="mvp-text">
                 <h3>Notification</h3>
-                <p>Depending on the classification of the audio segment, maintenance technicians are notified via text, enabling them to take almost instantaneous actions. The prompt notification system ensures that malfunctioning machines are checked and fixed promptly, reducing downtime and maintaining operational efficiency. This real-time alert system not only enhances the responsiveness of maintenance teams but also minimizes the impact of potential issues on production, leading to more streamlined and efficient operations.</p>
+                <p>Depending on the classification of the audio segment, maintenance technicians can be notified via text, enabling them to take almost instantaneous actions. The prompt notification system ensures that malfunctioning machines are checked and fixed promptly, reducing downtime and maintaining operational efficiency. This real-time alert system not only enhances the responsiveness of maintenance teams but also minimizes the impact of potential issues on production, leading to more streamlined and efficient operations.</p>
             </div>
         </div>
     </div>

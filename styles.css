@@ -32,6 +32,20 @@ h1 {
     margin-bottom: 20px;
 }
 
+.mel-image {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.notif-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 .mvp-image-row {
     display: flex;
     justify-content: space-around;
